@@ -22,7 +22,7 @@
 
 // Typography styles
 h1, h2, h3 {
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', serif;
 } 
 
 // Background gradient
@@ -38,9 +38,8 @@ h1, h2, h3 {
     border: none;
 }
 
-// Brand
 .navbar-brand {
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', serif;
     font-weight: 800;
 }
 
@@ -51,6 +50,17 @@ h1, h2, h3 {
     color: white;
     opacity: 0.75;
   }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+        background-color: #00c6ff;
+    }
 }
 
 // Homepage styles
