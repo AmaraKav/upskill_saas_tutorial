@@ -7,7 +7,7 @@ Rails.application.initialize!
 ActionMailer::Base.smtp_settings = {
     :port               => ENV['MAILGUN_SMTP_PORT'],
     :address            => ENV['MAILGUN_SMTP_SERVER'],
-    :username           => ENV['MAILGUN_SMTP_LOGIN'],
+    :user_name           => ENV['MAILGUN_SMTP_LOGIN'],
     :password           => ENV['MAILGUN_SMTP_PASSWORD'],
     :domain             => 'pure-cliffs-96252.herokuapp.com',
     :authentication     => :plain,
