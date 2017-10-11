@@ -2,13 +2,13 @@
 //Document ready
 $(document).on('turbolinks:load', function() {
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
   
   //Set Stripe public key
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
  
   //When user clicks form submit,
-  submitBtn.click(function() {
+  submitBtn.click(function(event) {
     
   //prevent default submitting behavior
     event.preventDefault();
