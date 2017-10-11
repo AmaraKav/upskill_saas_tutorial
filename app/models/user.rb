@@ -10,9 +10,9 @@ class User < ApplicationRecord
   attr_accessor :stripe_card_token
   def save_with_subscription
     if valid?
-  # Call Stripe and save that response to a variable
+  # Call Stripe and save that response to a variable (One time token)
       customer = Stripe::Customer.create(description: email, plan: plan_id, card: stripe_card_token)
-  # Insert token into db table and save
+  # Insert token into db table and save. (To create a subscription)
       self.stripe_customer_token = customer.id
       save!
     end
