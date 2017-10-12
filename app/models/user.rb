@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
          
   belongs_to :plan  
+  has_one :profile
   
   # To take form data and read it, you need to white list it
   attr_accessor :stripe_card_token
